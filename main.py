@@ -18,5 +18,7 @@ if __name__ == "__main__":
     text = input("Gib den Text ein: ")
     shift = int(input("Verschiebung (Schlüssel): "))
     
-    output = caesar_cipher(text, shift, mode)
-    print(f"Ergebnis: {output}")
+    while shift <= 25:
+        output = caesar_cipher(text, shift, mode)
+        print(f"Ergebnis: {output}")
+        shift += 1
